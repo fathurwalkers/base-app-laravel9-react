@@ -5,12 +5,14 @@ import Sidebar from '@/Components/Dashboard/Sidebar';
 
 console.log('test');
 
-const BaseLayout = ({ children }) => {
+const Layout = () => {
     return (
         <>
+            <Sidebar />
+            <h1>dsdsds</h1>
             {children}
         </>
     );
 }
 
-export default BaseLayout
+export default Layout

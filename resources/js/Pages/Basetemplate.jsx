@@ -5,9 +5,15 @@ import Sidebar from '@/Components/Dashboard/Sidebar';
 const Basetemplate = () => {
     return (
         <>
-            <h1>skdoksokdokso</h1>
-            <Sidebar />
-            <BaseLayout />
+            <BaseLayout>
+                <div className="container">
+                    <div className="card">
+                        <div className="card-body">
+                            sdsd
+                        </div>
+                    </div>
+                </div>
+            </BaseLayout>
         </>
     )
 }

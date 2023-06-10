@@ -1,75 +1,42 @@
 import React from 'react';
 import { Head } from '@inertiajs/react';
-
+console.log('testttttt');
 const Sidebar = () => {
     return (
-        <div>
-            <ul className="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-                    <div className="sidebar-brand-icon">
-                        <img src="/assets/ruangadmin/img/logo/logo2.png" />
-                    </div>
-                    <div className="sidebar-brand-text mx-3">ANALISIS SVM</div>
-                </a>
-                <hr className="sidebar-divider my-0" />
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Beranda</span></a>
-                </li>
-                <hr className="sidebar-divider" />
-                <div className="sidebar-heading">
-                    Analisi Sentimen
-                </div>
-                <li className="nav-item">
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-                        aria-expanded="true" aria-controls="collapseBootstrap">
-                        <i className="far fa-fw fa-window-maximize"></i>
-                        <span>Laporan</span>
-                    </a>
-                    <div id="collapseBootstrap" className="collapse" aria-labelledby="headingBootstrap"
-                        data-parent="#accordionSidebar">
-                        <div className="bg-white py-2 collapse-inner rounded">
-                            <h6 className="collapse-header">Bootstrap UI</h6>
-                            <a className="collapse-item" href="#">Data Sentimen</a>
-                            <a className="collapse-item" href="#">Data Lainnya</a>
-                        </div>
-                    </div>
-                </li>
+        <nav className="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+            <button id="sidebarToggleTop" className="btn btn-link rounded-circle mr-3">
+                <i className="fa fa-bars"></i>
+            </button>
+            <ul className="navbar-nav ml-auto">
 
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-palette"></i>
-                        <span>Crawling Data</span>
+                <div className="topbar-divider d-none d-sm-block"></div>
+                <li className="nav-item dropdown no-arrow">
+                    <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img className="img-profile rounded-circle" src="/assets/ruangadmin/img/boy.png"
+                            style="max-width: 60px" />
+                        <span className="ml-2 d-none d-lg-inline text-white small">Hai, Users!</span>
                     </a>
+                    <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                        aria-labelledby="userDropdown">
+                        <a className="dropdown-item" href="#">
+                            <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
+                        </a>
+                        <a className="dropdown-item" href="#">
+                            <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings
+                        </a>
+                        <a className="dropdown-item" href="#">
+                            <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
+                        </a>
+                        <div className="dropdown-divider"></div>
+                        <a className="dropdown-item" href="javascript:void(0);" data-toggle="modal"
+                            data-target="#logoutModal">
+                            <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+                        </a>
+                    </div>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-palette"></i>
-                        <span>Pre-processing Step</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-palette"></i>
-                        <span>Spell Correction</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-palette"></i>
-                        <span>Check Pembobotan Kata</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        <i className="fas fa-fw fa-palette"></i>
-                        <span>Settings</span>
-                    </a>
-                </li>
-                <hr className="sidebar-divider" />
             </ul>
-        </div>
+        </nav>
     )
 }
 
