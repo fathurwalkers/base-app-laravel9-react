@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link, Head } from '@inertiajs/react';
 import { useState } from 'react';
-import Header from '@/Components/Dashboard/Sidebar';
+import Sidebar from '@/Components/Dashboard/Sidebar';
 
-export default function DashboardLayout() {
+console.log('test');
+
+export default function DashboardLayout({ children }) {
     return (
         <>
-            <Header />
+            <Sidebar />
+            <h1>dsdsds</h1>
             {children}
         </>
     )

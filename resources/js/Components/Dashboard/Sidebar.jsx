@@ -1,7 +1,7 @@
 import React from 'react';
 import { Head } from '@inertiajs/react';
 
-export default function Header() {
+const Sidebar = () => {
     return (
         <div>
             <ul className="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
@@ -72,3 +72,5 @@ export default function Header() {
         </div>
     )
 }
+
+export default Sidebar
