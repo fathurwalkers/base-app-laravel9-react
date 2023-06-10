@@ -1,10 +1,15 @@
 import React from 'react';
-import DasboardLayout from '@/Layouts/DasboardLayout';
+import BaseLayout from '@/Layouts/BaseLayout';
+import Sidebar from '@/Components/Dashboard/Sidebar';
 
-export default function Basetemplate() {
+const Basetemplate = () => {
     return (
         <>
-            <DasboardLayout />
+            <h1>skdoksokdokso</h1>
+            <Sidebar />
+            <BaseLayout />
         </>
     )
 }
+
+export default Basetemplate
